@@ -1,10 +1,10 @@
 "Dr. Clive Page's":http://www.star.le.ac.uk/~cgp/ book __Professional Programmer's Guide to Fortran 77__ 
 
 This repository holds various scripts that I've used to convert the book from
-LaText into HTML. Then assemble the generated items into an ePUB suitable for
+LaText into HTML and assemble the generated items into an ePUB suitable for
 a reading system such as an iPad or Nook. 
 
 Feel free to download the "book":https://github.com/downloads/turesheim/Guide_to_Fortran77/prof77.epub and please report any issues with formatting etc.
 
-The **epub** task used in the build script can be found in this repository:
-https://github.com/turesheim/org.eclipse.mylyn.docs/tree/Bug_332122
+The **epub** task used in the build script is part of an ongoing effort to provide
+"ePUB support in Eclipse's Mylyn Docs":https://github.com/turesheim/org.eclipse.mylyn.docs/tree/Bug_332122
