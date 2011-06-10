@@ -6,14 +6,14 @@
 	<!-- Location for processed Tex file results -->
 	<property name="gendir" location="${basedir}/prof77" />
 	<property name="epubfile" location="${basedir}/prof77.epub" />
-
+	<property name="mylyn.docs" location="/Users/torkild/Development/Repositories/org.eclipse.mylyn.docs" />
 	<property name="eclipse.plugins" value="/Applications/Eclipse_3.7/plugins/" />
 
 	<path id="epub.classpath">
 		<fileset dir="${eclipse.plugins}">
 			<include name="*.jar" />
 		</fileset>
-		<pathelement location="${basedir}/../org.eclipse.mylyn.docs.epub/bin/" />
+		<pathelement location="${mylyn.docs}/org.eclipse.mylyn.docs.epub/bin/" />
 	</path>
 
 	<taskdef classpathref="epub.classpath" resource="org/eclipse/mylyn/docs/epub/ant/tasks.properties" />

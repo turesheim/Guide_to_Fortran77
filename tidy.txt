@@ -1,0 +1,14 @@
+output-xhtml: true
+enclose-text: true
+input-encoding: utf8
+output-encoding: utf8
+add-xml-decl: true
+drop-font-tags: true
+enclose-text: true
+char-encoding: utf8
+anchor-as-name: false
+bare: true
+drop-proprietary-attributes: true
+logical-emphasis: true
+numeric-entities: true
+hide-comments: true

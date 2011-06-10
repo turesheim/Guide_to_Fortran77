@@ -19,31 +19,31 @@ p {
   line-height: 1.5em;
 }
 
-code strong em, code em strong, pre strong em, pre em strong {
+code strong em, code em strong, pre strong em, pre em strong, tt strong em, tt em strong {
   font-weight: bold;
   font-style: italic;
   font-family: "DejaVu Sans Mono Bold Oblique", monospace;
-  color: #2a3f58;
+  color: #3a587a;
   font-size: 0.8em;
 }
 
-code em, em code, pre em, em pre {
+code em, em code, pre em, em pre, tt em, em tt {
   font-style: italic;
   font-family: "DejaVu Sans Mono Oblique", monospace;
-  color: #2a3f58;
+  color: #3a587a;
   font-size: 0.8em;
 }
 
-code strong, strong code, pre strong, strong pre {
+code strong, strong code, pre strong, strong pre, tt strong, strong tt {
   font-weight: bold;
   font-family: "DejaVu Sans Mono Bold", monospace;
-  color: #2a3f58;
+  color: #3a587a;
   font-size: 0.8em;
 }
 
-code, pre { 
+code, pre, tt { 
   font-family: "DejaVu Sans Mono", monospace;
-  color: #2a3f58;
+  color: #3a587a;
   font-size: 0.8em;
 }
 
