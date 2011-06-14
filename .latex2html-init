@@ -26,7 +26,7 @@ $DESTDIR = '';         # Put the result in this directory
 $NO_SUBDIR = 0;
 
 # Supply your own string if you don't like the default <Name> <Date>
-$ADDRESS = "<";
+$ADDRESS = "";
 
 $NO_NAVIGATION = 1;	# 1 = do not put a navigation panel at the top of each page
 

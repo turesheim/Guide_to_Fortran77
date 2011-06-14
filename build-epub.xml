@@ -17,57 +17,64 @@
 	</path>
 
 	<taskdef classpathref="epub.classpath" resource="org/eclipse/mylyn/docs/epub/ant/tasks.properties" />
-	
+
 	<target name="init">
 		<delete failonerror="false" includeEmptyDirs="true">
 			<fileset dir="${workdir}" />
 		</delete>
 		<delete file="${epubfile}" failonerror="false" />
 	</target>
-	
+
 	<target name="latex2html" depends="init">
 	</target>
 
 	<target name="build" depends="init,latex2html">
-		<mkdir dir="${workdir}"/>
-		<epub identifierId="uuid" file="${epubfile}" workingFolder="${workdir}">
+		<mkdir dir="${workdir}" />
+		<epub identifierId="uri" file="${epubfile}" workingFolder="${workdir}">
 			<language code="en" />
-			<identifier id="uuid" scheme="URI">http://www.star.le.ac.uk/%7Ecgp/prof77.tex</identifier>
+			<identifier id="uri" scheme="URI">https://github.com/turesheim/Guide_to_Fortran77/</identifier>
 			<title>Professional Programmer's Guide to Fortran77</title>
 			<subject>Computing, Fortran 77</subject>
 			<publisher>Torkild Ulvøy Resheim</publisher>
+			<date date="1995-02-22" event="creation" />
+			<date date="2005-07-07" event="modification" />
+			<!-- Original author -->
 			<creator name="Clive G. Page" fileAs="Page, Clive G." role="aut" />
+			<rights>GNU Free Documentation Licence</rights>
+			<rights>Copyright (c) 1988 - 2005 Clive G. Page</rights>
+			<!-- Compiler -->
 			<contributor name="Torkild Ulvøy Resheim" fileAs="Resheim, Torkild Ulvøy" role="com" />
 			<!-- The DejaVu Fonts - http://dejavu-fonts.org/wiki/License -->
 			<contributor name="Bitstream" fileAs="Bitstream" role="art" />
-			<item file="${gendir}/node2.html"/>
-			<item file="${gendir}/node3.html"/>
-			<item file="${gendir}/node4.html"/>
-			<item file="${gendir}/node5.html"/>
-			<item file="${gendir}/node6.html"/>
-			<item file="${gendir}/node7.html"/>
-			<item file="${gendir}/node8.html"/>
-			<item file="${gendir}/node9.html"/>
-			<item file="${gendir}/node10.html"/>
-			<item file="${gendir}/node11.html"/>
-			<item file="${gendir}/node12.html"/>
-			<item file="${gendir}/node13.html"/>
-			<item file="${gendir}/node14.html"/>
-			<item file="${gendir}/node15.html"/>
-			<item file="${gendir}/node16.html"/>
-			<item file="${gendir}/node17.html"/>
-			<item file="${gendir}/node18.html"/>
-			<item file="${gendir}/node19.html"/>
-			<item file="${gendir}/node20.html"/>
+			<!-- Location of the source TeX file -->
+			<source>http://www.star.le.ac.uk/%7Ecgp/prof77.tex</source>
+			<item file="${srcdir}/title-page.xhtml" />
+			<item file="${gendir}/node2.html" />
+			<item file="${gendir}/node3.html" />
+			<item file="${gendir}/node4.html" />
+			<item file="${gendir}/node5.html" />
+			<item file="${gendir}/node6.html" />
+			<item file="${gendir}/node7.html" />
+			<item file="${gendir}/node8.html" />
+			<item file="${gendir}/node9.html" />
+			<item file="${gendir}/node10.html" />
+			<item file="${gendir}/node11.html" />
+			<item file="${gendir}/node12.html" />
+			<item file="${gendir}/node13.html" />
+			<item file="${gendir}/node14.html" />
+			<item file="${gendir}/node15.html" />
+			<item file="${gendir}/node16.html" />
+			<item file="${gendir}/node17.html" />
+			<item file="${gendir}/node18.html" />
+			<item file="${gendir}/node19.html" />
 			<item file="${srcdir}/prof77.css" type="text/css" spine="false" />
-			<reference href="node2.html" type="text" title="What is Fortran?"/>
-			<reference href="node18.html" type="copyright-page" title="GNU Free Documentation Licence"/>
-			<reference href="node19.html" type="acknowledgements" title="Acknowledgements"/>
-			<reference href="node20.html" type="notes" title="About this document"/>
+			<reference href="title-page.xhtml" type="title-page" title="Title Page" />
+			<reference href="node2.html" type="text" title="What is Fortran?" />
+			<reference href="node18.html" type="copyright-page" title="GNU Free Documentation Licence" />
+			<reference href="node19.html" type="acknowledgements" title="Acknowledgements" />
 			<toc generate="true" />
 			<fileset dir="${gendir}">
 				<include name="*.gif" />
-				<include name="*.otf" />
 			</fileset>
 			<fileset dir="${srcdir}">
 				<include name="*.otf" />
