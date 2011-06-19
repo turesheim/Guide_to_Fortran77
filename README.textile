@@ -7,4 +7,4 @@ a reading system such as an iPad or Nook.
 Feel free to download the "book":https://github.com/downloads/turesheim/Guide_to_Fortran77/prof77.epub and please report any issues with formatting etc.
 
 The **epub** task used in the build script is part of an ongoing effort to provide
-"ePUB support in Eclipse's Mylyn Docs":https://github.com/turesheim/org.eclipse.mylyn.docs/tree/Bug_332122
+"ePUB support in Eclipse's Mylyn Docs":https://github.com/turesheim/org.eclipse.mylyn.docs/tree/Bug_332122. See also the "blog post":http://torkildr.blogspot.com/2011/06/building-electronic-books-using-ant.html announcing this publication.
