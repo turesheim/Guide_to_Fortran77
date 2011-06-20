@@ -94,7 +94,7 @@ td {
 }
 
 .author, .copyright {
-  font-size: 1em; color: #7c755b;
+  font-size: 1em; color: #000000;
   font-family: "Palatino", serif;
   font-weight: bold;
   text-align: center;
@@ -152,6 +152,12 @@ h6 {
   font-size: 1em;
   font-style: italic;
   font-family: "Palatino", serif;
+}
+
+hr {
+  width: 80%;
+  backgrund-color: #aaaaaa;
+  height: 1px;
 }
 
 /* 

@@ -67,14 +67,16 @@
 			<item file="${gendir}/node17.html" />
 			<item file="${gendir}/node18.html" />
 			<item file="${gendir}/node19.html" />
+			<item file="${srcdir}/ad-notam.xhtml" />
 			<item file="${srcdir}/prof77.css" type="text/css" spine="false" />
 			<reference href="title-page.xhtml" type="title-page" title="Title Page" />
 			<reference href="node2.html" type="text" title="What is Fortran?" />
 			<reference href="node18.html" type="copyright-page" title="GNU Free Documentation Licence" />
 			<reference href="node19.html" type="acknowledgements" title="Acknowledgements" />
+			<reference href="ad-notam.xhtml" type="notes" title="Ad Notam" />
 			<toc generate="true" />
 			<fileset dir="${gendir}">
-				<include name="*.gif" />
+				<include name="*png" />
 			</fileset>
 			<fileset dir="${srcdir}">
 				<include name="*.otf" />
