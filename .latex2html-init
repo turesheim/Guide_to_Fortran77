@@ -8,7 +8,7 @@ $MAX_LINK_DEPTH = 0;    # Stop showing child nodes at this depth
 
 $NOLATEX = 0;           # 1 = do not pass unknown environments to Latex
 
-$EXTERNAL_IMAGES = 0;   # 1 = leave the images outside the document 
+$EXTERNAL_IMAGES = 1;   # 1 = leave the images outside the document 
 
 $ASCII_MODE = 0;        # 1 = do not use any icons or internal images
 

@@ -1,8 +1,6 @@
 #!/bin/bash
-# We should be using PNG images. But there appears to be a bug in netpbm that
-# produces no images at all when in this mode.
 rm -rf prof77
-latex2html -split=+1 -html_version 3.2,unicode -image_type=gif prof77.tex
+latex2html -split=+1 -html_version 3.2,unicode -debug -image_type=png prof77.tex
 
 # Attempt to clean up some more mess
 tidy -config tidy.txt -m prof77/*.html
